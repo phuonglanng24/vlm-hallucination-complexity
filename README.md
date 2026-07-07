@@ -49,3 +49,9 @@ The dataset is not redistributed in this repository. Instructions for downloadin
 ## Citation
 
 Citation information will be added upon publication.
+
+## Acknowledgements
+
+- [LLaVA](https://github.com/haotian-liu/LLaVA) for the base VLM
+- [Segment Anything](https://github.com/facebookresearch/segment-anything) for SAM
+- [CHAIR](https://github.com/Maxlinn/CHAIR-metric) for hallucination evaluation
