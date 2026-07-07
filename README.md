@@ -4,26 +4,26 @@ This repository accompanies our study investigating the relationship between vis
 
 ## Overview
 
-Vision-language models can generate descriptions containing objects that are not actually present in an image, a phenomenon known as object hallucination. While visual complexity is often considered an intuitive factor contributing to this issue, the relationship between scene complexity and hallucination remains unclear.
+This repository contains code for:
+- Generating captions with LLaVA-1.5-7B
+- Evaluating object hallucination with CHAIR
+- Computing three visual complexity measures (handcrafted, visual-statistics, SAM-based)
+- Training an interpretable hallucination detector (XGBoost)
+- Running the mediation analysis (complexity → grounding → hallucination)
+- Reproducing all figures and tables
 
-In this work, we conduct a complexity-aware analysis of object hallucination in a widely used open-source VLM evaluated on the MS COCO dataset. We investigate:
+## Requirements
+- Python 3.9+
+- PyTorch 2.0+
+- CUDA (for LLaVA captioning, SAM, and CLIP grounding)
 
-- The relationship between different visual complexity measures and hallucination rates
-- The effect of visual content removal through image intervention experiments
-- The impact of representative hallucination mitigation approaches, including decoding-time, training-based, and attention-based methods
-- Whether hallucination can be predicted using interpretable visual and grounding features
-- Whether grounding mediates the relationship between visual complexity and hallucination
+## Data
 
-## Key Findings
+We use the MS COCO 2014 validation set:
+- Images: [download from COCO](https://cocodataset.org/#download) (val2014, ~7 GB)
+- Annotations: `instances_val2014.json` and `captions_val2014.json` from the same page
 
-Our analysis shows that:
-
-1. The relationship between scene-level complexity and hallucination is weak and depends strongly on the chosen complexity measure.
-2. Reducing visual content does not consistently reduce hallucination; removing small regions can slightly decrease hallucination, while removing substantial content can increase it.
-3. An interpretable hallucination detector relies primarily on object-level grounding features rather than complexity features.
-4. Mediation analysis suggests that when complexity influences hallucination, the effect is largely explained through grounding.
-
-These findings suggest that scene-level complexity alone is not a primary driver of object hallucination, while visual grounding provides a stronger explanatory signal.
+SAM checkpoint (ViT-H): [download from Meta](https://github.com/facebookresearch/segment-anything#model-checkpoints)
 
 ## Repository Status
 
