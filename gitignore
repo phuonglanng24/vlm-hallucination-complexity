@@ -1,0 +1,38 @@
+# Model checkpoints (large)
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+
+# Images (download from COCO)
+val2014/
+eval_subset_*/
+
+# Data outputs (reproducible from code)
+pipeline_out/*.csv
+*.jsonl
+*.json
+pipeline_out/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/

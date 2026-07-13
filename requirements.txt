@@ -1,0 +1,16 @@
+torch>=2.0
+torchvision
+transformers
+accelerate
+opencv-python
+numpy
+scipy
+pandas
+scikit-learn
+statsmodels
+xgboost
+tqdm
+pillow
+nltk
+matplotlib
+segment-anything @ git+https://github.com/facebookresearch/segment-anything.git
