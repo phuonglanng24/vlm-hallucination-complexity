@@ -182,12 +182,3 @@ python figures/plot_intervention.py --output figures/
 - [CHAIR](https://github.com/Maxlinn/CHAIR-metric) — hallucination evaluation (adapted from [LisaAnne/Hallucination](https://github.com/LisaAnne/Hallucination))
 - [OPERA](https://github.com/shikiw/OPERA), [REVERSE](https://github.com/tsunghan-wu/REVERSE), [Attention Lens](https://github.com/Ziwei-Zheng/Attention-Lens) — mitigation methods evaluated
 
-## Citation
-
-```bibtex
-@article{yourname2025complexity,
-    title={Scene Complexity, Grounding, and Object Hallucination in Vision-Language Models},
-    author={Your Name},
-    year={2025}
-}
-```
