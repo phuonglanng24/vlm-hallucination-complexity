@@ -1,6 +1,6 @@
-# Scene Complexity, Grounding, and Object Hallucination in Vision-Language Models
+# Unraveling Object Hallucination in Vision-Language Models: From Scene Complexity to Visual Grounding
 
-Code for the paper: *"Scene Complexity, Grounding, and Object Hallucination in Vision-Language Models"*
+Code for the paper: *"Unraveling Object Hallucination in Vision-Language Models: From Scene Complexity to Visual Grounding"*
 
 ## Overview
 
